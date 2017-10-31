@@ -42,7 +42,8 @@
     android:layout_marginRight="20dp"
     android:src="@drawable/ic_check_black_24dp"
     tools:targetApi="lollipop"
-    tools:ignore="RtlHardcoded" />
+    tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/continue_btn"/>
 
     <ListView
         android:id="@+id/fragment_inventory_ListView"

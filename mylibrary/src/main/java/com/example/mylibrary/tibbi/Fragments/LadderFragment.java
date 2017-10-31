@@ -49,6 +49,11 @@ public class LadderFragment extends Fragment implements RecyclerLadderAdapter.It
             Intent intent = getActivity().getIntent();
             mChar = intent.getParcelableExtra("char");
 
+            if(savedInstanceState != null){
+                mobsArrayList = savedInstanceState.getParcelableArrayList("MOB_LIST");
+                mChar = (MainCharacter) savedInstanceState.getSerializable("CHAR");
+            }
+
             rv.setHasFixedSize(true);
             int numberOfColumns = 1;
             GridLayoutManager mLayoutManager = new GridLayoutManager(getActivity(), numberOfColumns);
@@ -67,7 +72,7 @@ public class LadderFragment extends Fragment implements RecyclerLadderAdapter.It
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putSerializable("CHAR",mChar);
-        savedInstanceState.putSerializable("MOB_LIST", mobsArrayList);
+        savedInstanceState.putParcelableArrayList("MOB_LIST", mobsArrayList);
 
     }
     @Override

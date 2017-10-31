@@ -175,7 +175,8 @@
                 android:textSize="15sp"
                 android:textColor="@color/button_text"
                 android:layout_marginBottom="3dp"
-                android:background="@drawable/fight_btn_heavy"/>
+                android:background="@drawable/fight_btn_heavy"
+                android:contentDescription="@string/heavy_btn"/>
 
             <Button
                 android:id="@+id/fragment_fight_btn_fast"
@@ -187,7 +188,8 @@
                 android:textSize="15sp"
                 android:textColor="@color/button_text"
                 android:layout_marginBottom="3dp"
-                android:background="@drawable/fight_btn_fast"/>
+                android:background="@drawable/fight_btn_fast"
+                android:contentDescription="@string/fast_btn"/>
 
             <Button
                 android:id="@+id/fragment_fight_btn_throw"
@@ -199,7 +201,8 @@
                 android:textSize="15sp"
                 android:textColor="@color/button_text"
                 android:layout_marginBottom="3dp"
-                android:background="@drawable/fight_btn_throw"/>
+                android:background="@drawable/fight_btn_throw"
+                android:contentDescription="@string/throw_btn"/>
 
         </LinearLayout>
 

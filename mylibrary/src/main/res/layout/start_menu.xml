@@ -25,7 +25,8 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:background="@drawable/common_btn"
-        android:text="@string/btn_start"/>
+        android:text="@string/btn_start"
+        android:contentDescription="@string/btn_start"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +37,8 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:layout_marginTop="10dp"
-        android:text="@string/btn_instructions"/>
+        android:text="@string/btn_instructions"
+        android:contentDescription="@string/btn_instructions"/>
 
 </LinearLayout>
     <LinearLayout

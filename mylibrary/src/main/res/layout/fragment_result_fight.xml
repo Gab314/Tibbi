@@ -16,5 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/continue_btn"
-        android:textAllCaps="false" />
+        android:background="@drawable/common_btn"
+        android:textAllCaps="false"
+        android:contentDescription="@string/continue_btn"/>
 </LinearLayout>

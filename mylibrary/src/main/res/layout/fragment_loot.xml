@@ -24,7 +24,8 @@
         android:padding="10dp"
         android:text="@string/continue_btn"
         android:textAllCaps="false"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:contentDescription="@string/continue_btn"/>
 
 
 </LinearLayout>
