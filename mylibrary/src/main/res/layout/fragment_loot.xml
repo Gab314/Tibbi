@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loot_LinearLayout"
+    android:background="#FFFFFF"
+    android:gravity="center">
+<TextView
+    android:id="@+id/fragment_loot_TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/loot_msg"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:textSize="30sp"/>
+    <Button
+        android:id="@+id/loot_loot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/common_btn"
+        android:padding="10dp"
+        android:text="@string/continue_btn"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

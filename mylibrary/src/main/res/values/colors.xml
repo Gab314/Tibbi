@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#FFD740</color>
+    <color name="green_temp">#7db58a</color>
+    <color name="green_dark">#22333B</color>
+    <color name="bright_green">#22333B</color>
+    <color name="button_green">#22333B</color>
+    <color name="button_text">#28343f</color>
+    <color name="button_text_light">#ffffff</color>
+    <color name="heavy">#ff5555</color>
+    <color name="fast">#5134e3</color>
+    <color name="throw1">#4bc241</color>
+</resources>

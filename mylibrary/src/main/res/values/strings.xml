@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tibbi</string>
+    <string name="hp">HP:</string>
+    <string name="wil">WIL: </string>
+    <string name="agi">AGI: </string>
+    <string name="dex">DEX: </string>
+    <string name="det">DET: </string>
+    <string name="ref">REF: </string>
+    <string name="luc">LUC: </string>
+    <string name="c_name">Gab314</string>
+    <string name="loot_sword">Sword</string>
+    <string name="loot_shield">Shield</string>
+    <string name="loot_book">Book</string>
+    <string name="c_int">INT:</string>
+    <string name="btn_loot">Inventory</string>
+    <string name="btn_fight">Fight</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_load">Load</string>
+    <string name="btn_instructions">Instructions</string>
+    <string name="heavy_btn">Heavy</string>
+    <string name="fast_btn">Fast</string>
+    <string name="throw_btn">Throw</string>
+    <string name="heavy_text">Heavy:</string>
+    <string name="fast_text">Fast:</string>
+    <string name="throw_text">Throw:</string>
+    <string name="continue_btn">Continue</string>
+    <string name="mob_image">Mob_Image</string>
+    <string name="ladder_btn">Ladder</string>
+    <string name="add_btn">+</string>
+    <string name="char_img">char_img</string>
+    <string name="archer">Archer</string>
+    <string name="assassin">Assassin</string>
+    <string name="mercenary">Mercenary</string>
+    <string name="class_selection">Class Selection</string>
+    <string name="loot_msg">Loot!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_first_text">Start the game to see your character!</string>
+    <string name="start_btn_cont">Continue</string>
+    <string name="inv_no_items">No Items</string>
+    <string name="ad_unit_ID"> ca-app-pub-2550406934764289/3639416902</string>
+    <string name="inst_text">Fight by choosing between three options, Heavy, Fast and Throw. Remember!
+    Heavy > Fast , Fast > Throw, Throw > Heavy. If you win, you will have a chance to deal damage to the enemy.
+    The amount of damage you deal is based on your offensive stats (WILL, AGILITY, DEXTERITY). The same applies if you lose
+    and defensive stats are based on (DETERMINATION, REFLECTION, LUCK). To gain better stats, defeat a monster nad collect the loot.
+    The loot can be equipped in your inventory. Now you are all set, go out there and defeat all of them!</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mylibrary.tibbi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".Data.DBProvider"
+            android:authorities="com.example.mylibrary.tibbi.provider"
+            android:exported="false" />
+        <activity android:name=".Activities.LibMainActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Activities.ClassSelectionActivity"
+            android:parentActivityName=".Activities.LibMainActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".Activities.GameActivity"
+            android:parentActivityName=".Activities.ClassSelectionActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Activities.LadderActivity"
+            android:parentActivityName=".Activities.GameActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Activities.FightActivity"
+            android:parentActivityName=".Activities.LadderActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".Activities.LootActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.FightActivity"/>
+        <activity android:name=".Activities.InventoryActivity"
+            android:parentActivityName=".Activities.GameActivity"/>
+        <receiver android:name=".Widget.AppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info" />
+        </receiver>
+        <service android:name=".Widget.IntentService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+    </application>
+
+</manifest>

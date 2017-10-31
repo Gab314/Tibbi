@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_fight_RelativeLayout"
+    android:background="#FFFFFF">
+    <ProgressBar
+        android:id="@+id/progressBar_mob"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:progress="100"
+        android:progressTint="@color/heavy"
+        tools:targetApi="lollipop" />
+    <ProgressBar
+        android:id="@+id/progressBar_char"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:progress="100"
+        android:progressTint="@color/heavy"
+        tools:targetApi="lollipop" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fragment_fight_TextView_Round_Outcome"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/fragment_fight_LinearLayout_Mob_Type"
+        android:paddingBottom="15dp"
+        tools:ignore="RelativeOverlap,RtlSymmetry">
+        <TextView
+            android:id="@+id/fragment_fight_TextView_Mob_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/atomic_age"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/atomic_age"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_fight_TextView_Mob_HP"
+            android:textSize="15sp"
+            android:fontFamily="@font/atomic_age"
+            android:paddingRight="15dp"
+            android:paddingEnd="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/heavy"
+            android:id="@+id/fragment_fight_MoveBar_Heavy"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/fast"
+            android:id="@+id/fragment_fight_MoveBar_Fast"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/throw1"
+            android:id="@+id/fragment_fight_MoveBar_Throw"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fragment_fight_LinearLayout_Char"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingBottom="20dp"
+            tools:ignore="RtlHardcoded,RtlSymmetry">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top">
+                <TextView
+                    android:id="@+id/fragment_fight_TextView_Char_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/atomic_age"
+                    android:text="@string/c_name"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/atomic_age"
+                    android:text="@string/hp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/fragment_fight_TextView_Char_HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/atomic_age"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/buttonBarLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            tools:ignore="RelativeOverlap,RtlSymmetry">
+
+            <Button
+                android:id="@+id/fragment_fight_btn_heavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atomic_age"
+                android:text="@string/heavy_btn"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/button_text"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/fight_btn_heavy"/>
+
+            <Button
+                android:id="@+id/fragment_fight_btn_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atomic_age"
+                android:text="@string/fast_btn"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/button_text"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/fight_btn_fast"/>
+
+            <Button
+                android:id="@+id/fragment_fight_btn_throw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atomic_age"
+                android:text="@string/throw_btn"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/button_text"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/fight_btn_throw"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

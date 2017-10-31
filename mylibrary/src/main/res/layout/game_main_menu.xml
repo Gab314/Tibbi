@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_main_RelativeLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_game_TextView"
+            android:text="@string/c_name"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/activity_game_TextView">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="@string/add_btn"
+                android:background="@drawable/add_btn"
+                android:id="@+id/add_HP"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_game_TextViewHP"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_WIL"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewWIL"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewDET"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_DET"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_AGI"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewAGI"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewREF"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_REF"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp">
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_DEX"
+                    android:visibility="gone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewDEX"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_game_TextViewLUC"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/add_btn"
+                    android:background="@drawable/add_btn"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/add_LUC"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_game_Button_loot"
+            android:text="@string/btn_loot"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/button_text"
+            android:background="@drawable/common_btn" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_game_Button_fight"
+            android:text="@string/ladder_btn"
+            android:background="@drawable/common_btn"
+            android:textColor="@color/button_text"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+</ScrollView>

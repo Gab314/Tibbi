@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_selection"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/class_btn_mer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mercenary"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/button_text_light"
+            android:background="@drawable/fight_btn_heavy"/>
+        <Button
+            android:id="@+id/class_btn_ass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assassin"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/button_text_light"
+            android:background="@drawable/fight_btn_fast"/>
+        <Button
+            android:id="@+id/class_btn_arc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/archer"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/button_text_light"
+            android:background="@drawable/fight_btn_throw"/>
+    </LinearLayout>
+</LinearLayout>
