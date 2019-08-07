@@ -9,4 +9,4 @@ The project is not final, the files in this repository are the bare bones of the
 <p align="center">
   <img src="./Tibbi_Img/Screenshot_20180821-223203.png" alt="Size Limit CLI" width="380">
 </p>
-38
+The Image above is part of the game in development and it's not part of this repository, or the final game.
